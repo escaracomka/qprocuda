@@ -1,5 +1,5 @@
 # Gunakan base image dengan CUDA 12 dan Ubuntu 22.04
-FROM nvidia/cuda:12.0.0-base-ubuntu22.04
+FROM nvidia/cuda:12.2.2-runtime-ubuntu22.04 as base
 
 # Install dependencies seperti wget
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
